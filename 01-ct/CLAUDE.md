@@ -7,5 +7,7 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #3159 | 11:24 PM | 🟣 | Gamified Progress Tracking System with Rank Advancement | ~869 |
+| #3125 | 10:52 PM | 🔵 | Comprehensive Curriculum Master Document Architecture | ~793 |
 | #3080 | 10:36 PM | 🟣 | Master Java Curriculum Document Created with Gamified Learning System | ~884 |
 </claude-mem-context>

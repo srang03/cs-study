@@ -255,40 +255,74 @@ week3 스택·큐 ─────────────→ week4 DFS·BFS
 
 ---
 
+## 학습 관리
+
+### 진행 추적
+
+- [PROGRESS.md](PROGRESS.md) — 체크박스로 학습 진행 현황 관리
+- 각 항목 완료 시 `[ ]` → `[x]`, 퀴즈는 `Q1:O Q2:X` 형식으로 기록
+- 스킵 클리어 시 `[-] 직접 작성 (스킵)`으로 변경
+
+### practice 폴더 사용법
+
+- `docs/` — **읽기 전용** (커리큘럼 원본, 수정 금지)
+- `practice/` — **개인 학습** (코드 작성, 회고 기록)
+- 각 practice 폴더의 `README.md`에 해당 단원의 파일 목록과 네이밍 가이드가 있음
+
+#### 폴더 구조
+
+```
+practice/
+├── ex/                  직접 작성 과제 (Ex01_Name.java)
+├── prob/                코딩 문제 (Boj2557.java / Point.java)
+├── boss/                보스 문제 (Boj10172.java / BankAccount.java)
+├── review.md            보스 회고
+└── review_template.md   회고 양식 원본 (stage1에만 존재)
+```
+
+> 폴더별 분류로 유형이 명확하고, 파일명은 Java 클래스명 규칙을 준수
+
+#### 보스 회고 작성
+
+`stage1/practice/review_template.md`를 복사하여 각 단원의 `review.md`로 사용
+
+---
+
 ## 파일 구조
 
 ```
 01-ct/
-├── CURRICULUM.md              # 이 문서
+├── CURRICULUM.md              # 이 문서 (커리큘럼 설계)
+├── PROGRESS.md                # 진행 현황 추적
 ├── stage1/
-│   ├── docs/                  # 1.1~1.5 설명 문서
-│   └── practice/              # 실습 코드
+│   ├── docs/                  # 1.1~1.5 설명 문서 (읽기 전용)
+│   └── practice/              # README.md + 4_review_template.md
 ├── prep/
-│   ├── docs/                  # p.1~p.3 + 부록
-│   └── practice/
+│   ├── docs/                  # p.1~p.3 + 부록 (읽기 전용)
+│   └── practice/              # README.md
 ├── stage2/
-│   ├── docs/                  # 2.1~2.3
-│   └── practice/
+│   ├── docs/                  # 2.1~2.3 (읽기 전용)
+│   └── practice/              # README.md
 ├── stage3/
-│   ├── docs/                  # 3.1~3.4
-│   └── practice/
+│   ├── docs/                  # 3.1~3.4 (읽기 전용)
+│   └── practice/              # README.md
 └── stage4/
     ├── week1/
-    │   ├── docs/              # 1-1~1-4
-    │   └── practice/
+    │   ├── docs/              # 1-1~1-4 (읽기 전용)
+    │   └── practice/          # README.md
     ├── week2/
-    │   ├── docs/              # 2-1~2-4
-    │   └── practice/
+    │   ├── docs/              # 2-1~2-4 (읽기 전용)
+    │   └── practice/          # README.md
     ├── week3/
-    │   ├── docs/              # 3-1~3-4
-    │   └── practice/
+    │   ├── docs/              # 3-1~3-4 (읽기 전용)
+    │   └── practice/          # README.md
     ├── week4/
-    │   ├── docs/              # 4-1~4-5
-    │   └── practice/
+    │   ├── docs/              # 4-1~4-5 (읽기 전용)
+    │   └── practice/          # README.md
     ├── week5/
-    │   ├── docs/              # 5-1~5-5
-    │   └── practice/
+    │   ├── docs/              # 5-1~5-5 (읽기 전용)
+    │   └── practice/          # README.md
     └── week6/
-        ├── docs/              # 6-1~6-4
-        └── practice/
+        ├── docs/              # 6-1~6-4 (읽기 전용)
+        └── practice/          # README.md
 ```
