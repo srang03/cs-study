@@ -13,7 +13,7 @@ Claude Code에서 MCP 서버를 추가할 때 기본 명령은 `claude mcp add` 
 ### HTTP 서버 연결
 
 - 원격 MCP 서버는 `http` 전송 방식을 우선 사용합니다.
-- 공식 문서 기준으로 `sse` 는 deprecated 이므로 신규 구성에서는 권장하지 않습니다.
+- `sse` 는 여전히 지원되지만, 신규 구성에서는 `http` 를 우선 권장합니다.
 
 ```bash
 claude mcp add --transport http notion https://mcp.notion.com/mcp
@@ -48,9 +48,9 @@ MCP는 일반 Claude 설정과 별도 파일 체계를 사용합니다.
 
 | scope | 의미 | 저장 위치 |
 |------|------|-----------|
-| `user` | 모든 프로젝트에서 사용하는 개인 전역 설정 | `~/.claude.json` |
-| `project` | 팀이 공유하는 프로젝트 공용 설정 | 프로젝트 루트 `.mcp.json` |
-| `local` | 현재 프로젝트에서만 쓰는 개인 설정 | `~/.claude.json` |
+| `user` | 모든 프로젝트에서 사용하는 개인 전역 설정 | `~/.claude/settings.json` 또는 `~/.claude/mcp.json` |
+| `project` | 팀이 공유하는 프로젝트 공용 설정 | 프로젝트 루트 `.mcp.json` 또는 `.claude/mcp.json` |
+| `local` | 현재 프로젝트에서만 쓰는 개인 설정 | `.claude/settings.local.json` |
 
 - 기본 scope 는 `local` 입니다.
 - 오래된 문서의 `global` 은 현재 `user` 입니다.
