@@ -9,8 +9,8 @@
 
 | 플랜 | 모델 | 5시간당 사용량 |
 |------|------|----------------|
-| Pro ($20/월) | Sonnet 4만 지원 | 약 45 메시지 / 10~40 프롬프트 |
-| Max | Opus 포함, 5배 이상 | 사실상 Max 플랜에서 원활한 사용 |
+| Pro ($20/월) | Sonnet 4.6 | 약 45 메시지 / 10~40 프롬프트 |
+| Max ($100/월 또는 $200/월) | Opus 4.6 + Sonnet 4.6 | 5배~20배 사용량 |
 
 - 리셋: 5시간 롤링 윈도우, 시간(Hour) 단위만 적용
   - 예: 6시 59분 첫 메시지 → 11시 리셋, 7시 1분 첫 메시지 → 12시 리셋
@@ -50,33 +50,26 @@
 | `/hooks` | 설정된 hooks 목록 확인 |
 | `/model` | LLM 모델 변경 |
 | `/config` | 설정 옵션 관리 |
+| `/effort` | 모델 추론 깊이 조절 (low/medium/high/max) |
+| `/status` | 현재 모델, 계정 정보 확인 |
 | `#` | 메모 즉시 저장 |
 
-## 5. 실전 활용
+## 5. 키보드 단축키
 
-### 플랜 모드 활용
-- 와이어프레임을 캡처해 첨부
-- 수정/삭제/생성될 파일 리스트를 꼼꼼히 확인
-- 여러 번 계획을 수정한 뒤 승인(Accept)
+| 단축키 | 동작 |
+|--------|------|
+| `Shift+Tab` / `Alt+M` | Plan Mode 전환 |
+| `Alt+P` | 모델 변경 |
+| `Alt+T` | Extended Thinking 토글 |
+| `Ctrl+T` | 태스크 리스트 토글 |
+| `Ctrl+C` | 취소/중단 |
+| `Ctrl+L` | 화면 클리어 |
+| `Ctrl+G` | 외부 에디터에서 편집 |
+| `Ctrl+V` | 이미지 붙여넣기 |
+| `ESC` | 작업 중단 |
+| `ESC+ESC` | 이전 응답 되감기 |
 
-### 프롬프팅 팁
-- `think hard`, `ultra think` → 신중한 분석·구체적 계획 유도
-- `read entire file` → 파일 전체 읽기 요청
-- `short` → 짧은 답변 유도
-
-### 캘리브레이션
-- one shot, two shot으로 가능 범위를 파악
-- 한 번에 완성하기보다 단계적 접근 권장
-
-## 6. 환경 설정
-
-- MCP 연동: `claude mcp add-from-claude-desktop`로 Claude Desktop에 설치된 MCP를 터미널에서 사용
-
----
-
-고급 기능(Simplify, Batch, Remote Control, Ralph Loop 등)은 [update.md](update.md) 참조.
-
-## 7. 메모리 시스템
+## 6. 메모리 시스템
 
 | 계층 | 파일 | 역할 | 로딩 |
 |------|------|------|------|
@@ -87,3 +80,7 @@
 
 - `/memory` 명령으로 Auto Memory 확인/편집 가능
 - CLAUDE.md는 200줄 이내 권장, 상세 내용은 `.claude/rules/`나 별도 파일로 분리
+
+---
+
+워크플로우는 [workflow.md](workflow.md), 실전 팁은 [task-tips.md](task-tips.md), 고급 기능은 [update.md](update.md) 참조.
