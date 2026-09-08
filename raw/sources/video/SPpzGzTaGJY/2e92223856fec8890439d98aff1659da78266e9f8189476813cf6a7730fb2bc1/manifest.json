@@ -1,0 +1,21 @@
+{
+  "artifact_digest": "sha256:2e92223856fec8890439d98aff1659da78266e9f8189476813cf6a7730fb2bc1",
+  "content": {
+    "digest": "sha256:e05ee381039e54328fda5e78f50f543305fae82ef366cef1da1f448979a52a88",
+    "media_type": "text/markdown",
+    "path": "content.md",
+    "size": 49077
+  },
+  "created_at": "2026-09-08T04:27:16Z",
+  "generator": {
+    "name": "cs-study-capture",
+    "version": "1.0"
+  },
+  "media_type": "application/json",
+  "payload": "payload.json",
+  "primary_source": "https://www.youtube.com/watch?v=SPpzGzTaGJY",
+  "schema_version": "1.0",
+  "size": 52848,
+  "source_id": "SPpzGzTaGJY",
+  "source_type": "video"
+}
